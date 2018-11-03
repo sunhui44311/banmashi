@@ -1,0 +1,139 @@
+body{
+	font-size: 14px;
+}
+
+body,.lunbo,div{
+	padding: 0;
+	margin: 0;
+	vertical-align: baseline;
+}
+.lunbo,div{
+	font-size: 100%;
+}
+.lunbo,
+.lunbo .slide,
+.lunbo .slide .banner-img .images{
+	width: 100%;
+	height: 100%;
+}
+.lunbo .slide{
+	overflow: hidden;
+	position: relative;
+	border-radius: 4px
+}
+.lunbo .fl{
+	float: left;
+}
+.baner-img{
+	position: relative;
+}
+.lunbo .slide .baner-img,
+.lunbo .slide .baner-img>div{
+	height: 100%;
+	width: 100% !important;
+}
+.lunbo .slide .baner-img>div{
+	float: left;
+}
+.images{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.lunbo .slide .baner-img .images a{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+.lunbo .slide .baner-img .images a img{
+	width: 100% !important;
+}
+.lunbo .cut-btn{
+	position: absolute;
+	overflow: hidden;
+	cursor: pointer;
+	font-size:0;
+	top: 0;
+	height: 100%; 
+	width: 70px;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.lunbo .backward{
+	left: 0;
+}
+.lunbo .forward{
+	right: 0;
+}
+.lunbo .cut-btn i{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	margin-top: -22px;
+	text-align: center;
+	color: #f00;
+	background: rgba(0,0,0,0.1);
+	color: #fff;
+	font-weight: bold;
+}
+.lunbo .backward i{
+	left: 15px;
+}
+.iconfont{
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+.slide:hover .slide-box .cut-btn, .cut-btn:hover{
+	transition: opacity 0.2s;
+	opacity: 1;
+}
+
+.cut-btn:hover >i{
+	background: rgba(0,0,0,0.8);
+}
+
+.slide .tabs{
+	position: absolute;
+	clear: both;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 9px;
+	left: 45%;
+	bottom: 20px;
+	text-align:right; 
+}
+.slide .tabs a{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 1px;
+	background-color: #fff;
+	transition: all 0.2s;
+	margin: 0px 4px;
+	cursor: pointer;
+	position: relative; 
+	background:#363636;
+	transition: background 0.3s
+}
+.slide .tabs .on,.slide .tabs a:hover{
+	background-color: #F9C712;
+	transition: background 0.3s
+}
+
+
+.fade-enter-active, .fade-leave-active {
+	transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	opacity: 0;
+}
+
+
+
